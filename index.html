@@ -1,0 +1,86 @@
+<html>
+<head>
+<meta charset="UTF-8"> 
+<title>Chessboard using Pure CSS and HTML</title>
+<link rel="stylesheet" href="chess.css" type="text/css">
+<script src="chess.js"></script>
+</head>
+<body>
+<div class="chessboard">
+<!-- 1st -->
+<div class="white" id="a8" onclick="select_position(this.id)" piece="T">&#9820;</div>
+<div class="black" id="b8" onclick="select_position(this.id)" piece="H">&#9822;</div>
+<div class="white" id="c8" onclick="select_position(this.id)" piece="B">&#9821;</div>
+<div class="black" id="d8" onclick="select_position(this.id)" piece="Q">&#9819;</div>
+<div class="white" id="e8" onclick="select_position(this.id)" piece="K">&#9818;</div>
+<div class="black" id="f8" onclick="select_position(this.id)" piece="B">&#9821;</div>
+<div class="white" id="g8" onclick="select_position(this.id)" piece="H">&#9822;</div>
+<div class="black" id="h8" onclick="select_position(this.id)" piece="T">&#9820;</div>
+<!-- 2nd -->
+<div class="black" id="a7" onclick="select_position(this.id)" piece="P">&#9823;</div>
+<div class="white" id="b7" onclick="select_position(this.id)" piece="P">&#9823;</div>
+<div class="black" id="c7" onclick="select_position(this.id)" piece="P">&#9823;</div>
+<div class="white" id="d7" onclick="select_position(this.id)" piece="P">&#9823;</div>
+<div class="black" id="e7" onclick="select_position(this.id)" piece="P">&#9823;</div>
+<div class="white" id="f7" onclick="select_position(this.id)" piece="P">&#9823;</div>
+<div class="black" id="g7" onclick="select_position(this.id)" piece="P">&#9823;</div>
+<div class="white" id="h7" onclick="select_position(this.id)" piece="P">&#9823;</div>
+<!-- 3th -->
+<div class="white" id="a6" onclick="select_position(this.id)" piece=""></div>
+<div class="black" id="b6" onclick="select_position(this.id)" piece=""></div>
+<div class="white" id="c6" onclick="select_position(this.id)" piece=""></div>
+<div class="black" id="d6" onclick="select_position(this.id)" piece=""></div>
+<div class="white" id="e6" onclick="select_position(this.id)" piece=""></div>
+<div class="black" id="f6" onclick="select_position(this.id)" piece=""></div>
+<div class="white" id="g6" onclick="select_position(this.id)" piece=""></div>
+<div class="black" id="h6" onclick="select_position(this.id)" piece=""></div>
+<!-- 4st -->
+<div class="black" id="a5" onclick="select_position(this.id)" piece=""></div>
+<div class="white" id="b5" onclick="select_position(this.id)" piece=""></div>
+<div class="black" id="c5" onclick="select_position(this.id)" piece=""></div>
+<div class="white" id="d5" onclick="select_position(this.id)" piece=""></div>
+<div class="black" id="e5" onclick="select_position(this.id)" piece=""></div>
+<div class="white" id="f5" onclick="select_position(this.id)" piece=""></div>
+<div class="black" id="g5" onclick="select_position(this.id)" piece=""></div>
+<div class="white" id="h5" onclick="select_position(this.id)" piece=""></div>
+<!-- 5th -->
+<div class="white" id="a4" onclick="select_position(this.id)" piece=""></div>
+<div class="black" id="b4" onclick="select_position(this.id)" piece=""></div>
+<div class="white" id="c4" onclick="select_position(this.id)" piece=""></div>
+<div class="black" id="d4" onclick="select_position(this.id)" piece=""></div>
+<div class="white" id="e4" onclick="select_position(this.id)" piece=""></div>
+<div class="black" id="f4" onclick="select_position(this.id)" piece=""></div>
+<div class="white" id="g4" onclick="select_position(this.id)" piece=""></div>
+<div class="black" id="h4" onclick="select_position(this.id)" piece=""></div>
+<!-- 6th -->
+<div class="black" id="a3" onclick="select_position(this.id)" piece=""></div>
+<div class="white" id="b3" onclick="select_position(this.id)" piece=""></div>
+<div class="black" id="c3" onclick="select_position(this.id)" piece=""></div>
+<div class="white" id="d3" onclick="select_position(this.id)" piece=""></div>
+<div class="black" id="e3" onclick="select_position(this.id)" piece=""></div>
+<div class="white" id="f3" onclick="select_position(this.id)" piece=""></div>
+<div class="black" id="g3" onclick="select_position(this.id)" piece=""></div>
+<div class="white" id="h3" onclick="select_position(this.id)" piece=""></div>
+<!-- 7th -->
+<div class="white" id="a2" onclick="select_position(this.id)" piece="P">&#9817;</div>
+<div class="black" id="b2" onclick="select_position(this.id)" piece="P">&#9817;</div>
+<div class="white" id="c2" onclick="select_position(this.id)" piece="P">&#9817;</div>
+<div class="black" id="d2" onclick="select_position(this.id)" piece="P">&#9817;</div>
+<div class="white" id="e2" onclick="select_position(this.id)" piece="P">&#9817;</div>
+<div class="black" id="f2" onclick="select_position(this.id)" piece="P">&#9817;</div>
+<div class="white" id="g2" onclick="select_position(this.id)" piece="P">&#9817;</div>
+<div class="black" id="h2" onclick="select_position(this.id)" piece="P">&#9817;</div>
+<!-- 8th -->
+<div class="black" id="a1" onclick="select_position(this.id)" piece="T">&#9814;</div>
+<div class="white" id="b1" onclick="select_position(this.id)" piece="H">&#9816;</div>
+<div class="black" id="c1" onclick="select_position(this.id)" piece="B">&#9815;</div>
+<div class="white" id="d1" onclick="select_position(this.id)" piece="Q">&#9813;</div>
+<div class="black" id="e1" onclick="select_position(this.id)" piece="K">&#9812;</div>
+<div class="white" id="f1" onclick="select_position(this.id)" piece="B">&#9815;</div>
+<div class="black" id="g1" onclick="select_position(this.id)" piece="H">&#9816;</div>
+<div class="white" id="h1" onclick="select_position(this.id)" piece="T">&#9814;</div>
+</div>
+
+<div class="white" id="reset" onclick="reset()">R</div>
+</body>
+</html>
