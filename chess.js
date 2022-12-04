@@ -1,49 +1,59 @@
 var selected = false
 var div_id_selected = ""
+var playing_with="whites"
+
+function flip(){
+	if (playing_with=="whites"){
+		playing_with="black"
+		reset()
+	}else{
+		playing_with="whites"
+		reset()
+	}
+}
 
 function reset(){
-	var letters = ["a", "b", "c", "d","e", "f", "g", "h"];
-	for (var i = 0; i < letters.length; i++) { 
-		//console.log(xs[i]); 
-		for(var j=0;j<9;j++){
-			//console.log(letters[i]+j);
-			//div = document.getElementById(""+xs[i]+j)
-		}
+	if (playing_with=="whites"){
+		top_pieces = "black"
+		bottom_pieces = "white"
+	}else{
+		top_pieces = "white"
+		bottom_pieces = "black"
 	}
-	reset_div('a8','white','black','T');
-	reset_div('b8','black','black','H');
-	reset_div('c8','white','black','B');
-	reset_div('d8','black','black','Q');
-	reset_div('e8','white','black','K');
-	reset_div('f8','black','black','B');
-	reset_div('g8','white','black','H');
-	reset_div('h8','black','black','T');
-	reset_div('a7','black','black','P');
-	reset_div('b7','white','black','P');
-	reset_div('c7','black','black','P');
-	reset_div('d7','white','black','P');
-	reset_div('e7','black','black','P');
-	reset_div('f7','white','black','P');
-	reset_div('g7','black','black','P');
-	reset_div('h7','white','black','P');
+	reset_div('a8','white',top_pieces,'T');
+	reset_div('b8','black',top_pieces,'H');
+	reset_div('c8','white',top_pieces,'B');
+	reset_div('d8','black',top_pieces,'Q');
+	reset_div('e8','white',top_pieces,'K');
+	reset_div('f8','black',top_pieces,'B');
+	reset_div('g8','white',top_pieces,'H');
+	reset_div('h8','black',top_pieces,'T');
+	reset_div('a7','black',top_pieces,'P');
+	reset_div('b7','white',top_pieces,'P');
+	reset_div('c7','black',top_pieces,'P');
+	reset_div('d7','white',top_pieces,'P');
+	reset_div('e7','black',top_pieces,'P');
+	reset_div('f7','white',top_pieces,'P');
+	reset_div('g7','black',top_pieces,'P');
+	reset_div('h7','white',top_pieces,'P');
 	
 
-	reset_div('a1','black','white','T');
-	reset_div('b1','white','white','H');
-	reset_div('c1','black','white','B');
-	reset_div('d1','white','white','Q');
-	reset_div('e1','black','white','K');
-	reset_div('f1','white','white','B');
-	reset_div('g1','black','white','H');
-	reset_div('h1','white','white','T');
-	reset_div('a2','white','white','P');
-	reset_div('b2','black','white','P');
-	reset_div('c2','white','white','P');
-	reset_div('d2','black','white','P');
-	reset_div('e2','white','white','P');
-	reset_div('f2','black','white','P');
-	reset_div('g2','white','white','P');
-	reset_div('h2','black','white','P');
+	reset_div('a1','black',bottom_pieces,'T');
+	reset_div('b1','white',bottom_pieces,'H');
+	reset_div('c1','black',bottom_pieces,'B');
+	reset_div('d1','white',bottom_pieces,'Q');
+	reset_div('e1','black',bottom_pieces,'K');
+	reset_div('f1','white',bottom_pieces,'B');
+	reset_div('g1','black',bottom_pieces,'H');
+	reset_div('h1','white',bottom_pieces,'T');
+	reset_div('a2','white',bottom_pieces,'P');
+	reset_div('b2','black',bottom_pieces,'P');
+	reset_div('c2','white',bottom_pieces,'P');
+	reset_div('d2','black',bottom_pieces,'P');
+	reset_div('e2','white',bottom_pieces,'P');
+	reset_div('f2','black',bottom_pieces,'P');
+	reset_div('g2','white',bottom_pieces,'P');
+	reset_div('h2','black',bottom_pieces,'P');
 
 
 	reset_div('a6','white','black','');
