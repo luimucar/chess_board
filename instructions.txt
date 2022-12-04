@@ -1,0 +1,13 @@
+npm install express
+
+
+(it will create package.json and node_modules)
+
+then you do node app.js 
+
+(it will launch your server)
+
+
+creo un heroku
+
+https://parse-multiform-data.herokuapp.com/post-page
